@@ -24,19 +24,19 @@ def menuDiretor():
 			cpfreg = cpf
 			hora = data()
 			choose = 'Entrada'
-		elif escolha == '2'
+		elif escolha == '2':
 			print("Saída registrada.")
 			cpfreg = cpf
 			hora = data()
 			choose = 'Saída'
 		else:
-			print("Opção inválida.")
+			print("Opção inválida")
 			menuDiretor()
-	if choose != '0'		
+	if choose != '0':	
 		SysPonto.Historico[cpf] = [cpfreg, hora, choose]
 	else:
 		menuDiretor()
-def data()
+def data():
 	now = datetime.now()
 	return now
 	
